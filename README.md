@@ -1,20 +1,21 @@
-# nuxt_demo
+# Nuxt_Demo
 
-## Build Setup
+**인원**
 
-```bash
-# install dependencies
-$ npm install
+  - 1명
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+**개발기간**
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+  - 2020년 04월 9일 ~ now()
 
-# generate static project
-$ npm run generate
-```
+**개발스택**
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+  - Vue.js, Nuxt.js
+
+**담당업무**
+  
+  - 퍼블리싱 및 개발(100%)
+
+## 소개
+기존 Vue.js의 SPA()에서의 단점인 SEO(Search Engine Optimization)을 띄어나게 해줄 
+SSR(Server Side Rendering)을 권장하고 있으며 리액트의 next.js를 기반으로한 nuxt.js를 사용하고자 합니다.
