@@ -1,26 +1,84 @@
 <template>
     <div class="card footer">
-        <div class="h2 mb-0">
-    <b-icon icon="exclamation-circle-fill" variant="success"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="warning"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="danger"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="info"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="primary"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="secondary"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="dark"></b-icon>
-  </div>
+        <div>
+            <b-icon 
+                class="cursor-pointer"
+                :style="iconVelogStyle" 
+                @mouseover="overIcon('velog')" 
+                @mouseleave="leaveIcon('velog')" 
+                font-scale="1.5" 
+                icon="person-square" 
+                @click="onClickUrl('https://velog.io/@ieed0205')">
+            </b-icon>
+            <b-icon 
+                class="cursor-pointer"
+                :style="iconGitStyle" 
+                @mouseover="overIcon('git')"
+                @mouseleave="leaveIcon('git')" 
+                font-scale="1.5" 
+                icon="github" 
+                @click="onClickUrl('https://github.com/2ByungJun/NuxtJS_demo')">
+            </b-icon>
+            <b-icon icon="envelope" font-scale="1.5"></b-icon><span> ieed0205@naver.com</span>
+        </div>
     </div>
 </template>
 
+<script>
+export default {
+    data(){
+        return {
+            iconVelogStyle: { color: 'white'},
+            iconGitStyle: { color: 'white'},
+        }
+    },
+    methods:{
+        onClickUrl(url){
+            window.open(url)
+        },
+        overIcon(icon){
+            switch(icon){
+                case 'velog':
+                    this.iconVelogStyle = {color: '#F3F481'}
+                    break;
+                case 'git':
+                    this.iconGitStyle = {color: '#F3F481'}
+                    break;
+            }
+        },
+        leaveIcon(icon){
+            switch(icon){
+                case 'velog':
+                    this.iconVelogStyle = {color: 'white'}
+                    break;
+                case 'git':
+                    this.iconGitStyle = {color: 'white'}
+                    break;
+            }
+        }
+    }
+}
+</script>
+
 <style scoped>
+.cursor-pointer{
+    cursor: pointer;
+}
+
+svg{
+    margin-left: 5px;
+}
+
 .footer {
     position: fixed;
     height: 5%;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #F4EBEA;
+    background-color: #253629;
     color: white;
-    text-align: right;
+    align-items: center;
+    justify-content: center;
 }
+
 </style>

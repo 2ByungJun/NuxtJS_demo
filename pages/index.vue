@@ -1,42 +1,18 @@
 <template>
-  <div class="container">
-    <div>
-      <div>
-        <b-card
-          title="Card Title"
-          img-src="https://picsum.photos/600/300/?image=25"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 20rem;"
-          class="mb-2"
-        >
-          <b-card-text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
-          </b-card-text>
+  <div>
+    <div class="areaDiv" style="background-color: #E4E6DA;">
+    
+    </div>
+    <div class="areaDiv" style="background-color: #C0CFB2;">
 
-          <b-button href="#" variant="primary">Go somewhere</b-button>
-        </b-card>
-      </div>
+    </div>
 
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <div class="areaDiv" style="background-color: #8BA989;">
+
+    </div>
+
+    <div class="areaDiv" style="background-color: #49654D;">
+
     </div>
   </div>
 </template>
@@ -46,6 +22,11 @@ export default {}
 </script>
 
 <style>
+.areaDiv {
+  width: 100%;
+  height: 900px;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
