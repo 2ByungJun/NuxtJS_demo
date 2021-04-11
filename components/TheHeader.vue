@@ -5,10 +5,10 @@
                 <h2 class="headerName">BBANG-JUN</h2>
             </div>
             <div class="headerMenu col-md-6 text-right">
-                <a href="#"><h3>PROJECT</h3></a>
-                <a href="#"><h3>SKILL</h3></a>
-                <a href="#"><h3>ABOUT</h3></a>
-                <a href="#"><h3>HOME</h3></a>
+                <a href="#project"><h3>PROJECT</h3></a>
+                <a href="#skill"><h3>SKILL</h3></a>
+                <a href="#about"><h3>ABOUT</h3></a>
+                <a href="#home"><h3>HOME</h3></a>
             </div>
         </div>
     </div>
@@ -16,7 +16,6 @@
 
 <script>
 export default {
-
 }
 </script>
 

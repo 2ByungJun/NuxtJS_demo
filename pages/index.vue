@@ -1,17 +1,20 @@
 <template>
   <div>
-    <div class="areaDiv" style="background-color: #E4E6DA;">
-    
-    </div>
-    <div class="areaDiv" style="background-color: #C0CFB2;">
+    <!-- HOME -->
+    <div class="areaDiv home" id="home"></div>
 
-    </div>
-
-    <div class="areaDiv" style="background-color: #8BA989;">
-
+    <!-- ABOUT -->
+    <div class="areaDiv" id="about" style="background-color: #C0CFB2;">
+      
     </div>
 
-    <div class="areaDiv" style="background-color: #49654D;">
+    <!-- SKILL -->
+    <div class="areaDiv" id="skill" style="background-color: #8BA989;">
+
+    </div>
+
+    <!-- PROJECT -->
+    <div class="areaDiv" id="project" style="background-color: #49654D;">
 
     </div>
   </div>
@@ -25,6 +28,13 @@ export default {}
 .areaDiv {
   width: 100%;
   height: 900px;
+}
+
+.home {
+  width: 100%;
+  height: 900px;
+  background-image: url('../assets/img/33.png'); /** 포트폴리오용 이미지가 들어갈 자리 */
+  background-size: cover;
 }
 
 .container {
