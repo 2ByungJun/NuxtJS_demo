@@ -23,8 +23,8 @@ SSR(Server Side Rendering)을 권장하고 있으며 리액트의 next.js를 기
 ## 구현단계
 - [x] 레이아웃 구현
 - [x] Header, Footer 구현
-- [ ] 스크롤 위치 이동 기능 추가
-- [ ] Home Background 이미지 추가(GIF)
+- [x] 스크롤 위치 이동 기능 추가
+- [x] Home Background 이미지 추가
 - [ ] ABOUT UI 구현
 - [ ] SKILL UI 카드 그리드 형태 구현
 - [ ] SKILL 카드 애니메이션 툴팁 추가
