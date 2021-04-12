@@ -1,7 +1,7 @@
 <template>
     <div class="areaDiv home">
         <div class="subContext">
-            <p class="medium">HELLO, I'm</p>
+            <span class="bold">HELLO, I'm</span>
         </div>
         <div class="mainContext">
             <p class="bold">- LEE BYUNG JUN -</p>
@@ -29,6 +29,7 @@
 
 .subContext{
     margin-top: 100px;
-    font-size: 20px
+    font-style: italic;
+    font-size: 20px;
 }
 </style>
