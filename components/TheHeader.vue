@@ -8,7 +8,7 @@
                 <a href="#project"><h3>PROJECT</h3></a>
                 <a href="#skill"><h3>SKILL</h3></a>
                 <a href="#about"><h3>ABOUT</h3></a>
-                <a href="#home"><h3>HOME</h3></a>
+                <a href="#"><h3>HOME</h3></a>
             </div>
         </div>
     </div>
@@ -29,7 +29,11 @@ a{
     position: fixed;
     left: 0;
     top: 0;
+    left: 0;
+    right: 0;
+
     width: 100%;
+    height: 46px;
     background-color: #ECECE9;
     color: white;
     text-align: center;
