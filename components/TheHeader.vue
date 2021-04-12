@@ -84,9 +84,8 @@ export default {
     right: 0;
 
     width: 100%;
-    height: 46px;
+    height: 2.5rem;
     padding: 10px 20px 10px 20px;
-    background-color: #DCC97B;
     text-align: center;
 }
 
@@ -97,7 +96,7 @@ export default {
 .header-title {
     width: 50%;
     align-self: center;
-    color: black;
+    color: white;
 }
 
 .title {
@@ -112,7 +111,7 @@ export default {
 .menu{
     margin-right: 20px;
     float: right;
-    color: black;
+    color: white;
 }
 
 .header-icon{

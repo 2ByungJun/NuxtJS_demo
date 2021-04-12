@@ -61,6 +61,11 @@ export default {
 </script>
 
 <style scoped>
+.card{
+    border: 0px;
+    border-radius: 0px;
+}
+
 .cursor-pointer{
     cursor: pointer;
 }

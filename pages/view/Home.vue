@@ -11,8 +11,6 @@
 
 <style scoped>
 .home {
-    width: 100%;
-    height: 900px;
     background-image: url('../../assets/img/lbj_back.jpg');
     background-size: cover;
     text-align: center;
@@ -35,7 +33,7 @@
     /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
     .home {
     width: 100%;
-    height: 900px;
+    height: 73rem;
     background-image: url('../../assets/img/lbj_back_sm.jpg');
     background-size: cover;
     text-align: center;

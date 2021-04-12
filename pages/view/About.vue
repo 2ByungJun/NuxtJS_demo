@@ -10,7 +10,14 @@
                 <p>현재는 웹/앱 풀스택 개발을 목표로 지향하고 있습니다.</p>
             </div>
         </div>
-        <!-- <h1 class="h1">Career</h1> -->
+        <br>
+        <h1 class="h1">Career</h1>
+        <div class="row">
+            <div class="about-text-div font-ssans">
+                <p>순천향대학교 컴퓨터소프트웨어 공학과 학사졸업 <br>(2015.03~2021.02)</p>
+                <p>㈜인실리코젠 개발자 <br>(2020.07~현)</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -30,7 +37,7 @@
 
 .h1{
     border-bottom: 5px solid #444;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .font-ssans{
@@ -40,7 +47,7 @@
 .img{
     max-width: 20rem; 
     max-height: 20rem;
-    margin-left: 10px;
-    margin-top: 20px;
+    margin-left: 1rem;
+    margin-top: 2rem;
 }
 </style>

@@ -40,8 +40,8 @@ html, body {
 
 .areaDiv {
   width: 100%;
-  height: 900px;
-  padding-top: 46px;
+  height: 73rem;
+  padding-top: 2.5rem;
 }
 
 .container {
