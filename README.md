@@ -31,3 +31,4 @@ SSR(Server Side Rendering)을 권장하고 있으며 리액트의 next.js를 기
 - [ ] PROJECT UI 카드 그리드 형태 구현
 - [ ] PROJECT 이미지 오버레이 위의 설명 형태 추가
 - [ ] PROJECT 디테일 추가
+- [ ] 모바일용 반응형 구현
