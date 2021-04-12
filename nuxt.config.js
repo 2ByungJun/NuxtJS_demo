@@ -36,6 +36,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/vuetify',
   ],
 
   bootstrapVue: {

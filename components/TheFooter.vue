@@ -67,7 +67,8 @@ export default {
 
 svg{
     margin-left: 5px;
-    margin-top: 9px;
+    margin-top: 6px;
+    margin-bottom: 2px;
 }
 
 .footer {

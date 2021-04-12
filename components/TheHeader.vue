@@ -1,14 +1,17 @@
 <template>
     <div class="card header">
         <div class="row">
-            <div class="col-md-6 text-left">
-                <h2 class="headerName">BBANG-JUN</h2>
+            <div class="header-title text-left">
+                <h2 class="title">BBANG-JUN</h2>
             </div>
-            <div class="headerMenu col-md-6 text-right">
-                <a href="#project"><h3>PROJECT</h3></a>
-                <a href="#skill"><h3>SKILL</h3></a>
-                <a href="#about"><h3>ABOUT</h3></a>
-                <a href="#"><h3>HOME</h3></a>
+            <div class="header-menu text-right">
+                <a class="menu" href="#project"><h3>PROJECT</h3></a>
+                <a class="menu" href="#skill"><h3>SKILL</h3></a>
+                <a class="menu" href="#about"><h3>ABOUT</h3></a>
+                <a class="menu" href="#"><h3>HOME</h3></a>
+            </div>
+            <div class="header-icon">
+                <b-icon icon="justify" font-scale="2"></b-icon>
             </div>
         </div>
     </div>
@@ -16,15 +19,15 @@
 
 <script>
 export default {
+    computed:{
+        smAt(){
+            return this.$store.state.smAt
+        }
+    },
 }
 </script>
 
 <style scoped>
-a{
-    margin-right: 20px;
-    float: right;
-    color: #49654D;
-}
 .header {
     position: fixed;
     left: 0;
@@ -34,19 +37,48 @@ a{
 
     width: 100%;
     height: 46px;
-    background-color: #ECECE9;
+    padding: 10px 20px 10px 20px;
+    background-color: #253629;
     color: white;
     text-align: center;
 }
 
-.headerName {
-    float: left;
-    margin-left: 10px;
-    color: #49654D;
+.header-title {
+    width: 50%;
+    align-self: center;
 }
 
-.headerMenu {
+.title {
+    float: left;
+    color: white;
+}
+
+.header-menu {
+    width: 50%;
     align-self: center;
-    color: #49654D;
+    color: white;
+}
+
+.menu{
+    margin-right: 20px;
+    float: right;
+    color: white;
+}
+
+.header-icon{
+    display: none;
+}
+
+@media screen and (max-width: 1018px) {
+    .header-menu {
+        display: none;
+    }
+
+    .header-icon{
+        display: block;
+        width: 50%;
+        align-self: center;
+        text-align: right;
+    }
 }
 </style>
