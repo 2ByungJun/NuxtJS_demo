@@ -1,8 +1,8 @@
 <template>
-    <div class="card header">
+    <div class="header">
         <div class="row header-div">
             <div class="header-title text-left">
-                <h2 class="title">BBANG-JUN</h2>
+                <h3 class="title light">BBANG-JUN</h3>
             </div>
             <div class="header-menu text-right">
                 <a class="menu" href="#project"><h3>PROJECT</h3></a>
@@ -36,7 +36,7 @@
                 <div class="p-3">
                     <nav class="mb-3">
                         <b-nav vertical>
-                            <b-nav-item href="#home" >Home</b-nav-item>
+                            <b-nav-item href="#home" >HOME</b-nav-item>
                             <b-nav-item href="#about" >ABOUT</b-nav-item>
                             <b-nav-item href="#skill" >SKILL</b-nav-item>
                             <b-nav-item href="#project" >PROJECT</b-nav-item>
@@ -72,10 +72,6 @@ export default {
 </script>
 
 <style scoped>
-.card{
-    border: 0px
-}
-
 .cursor-pointer{
     cursor: pointer;
 }
@@ -90,7 +86,7 @@ export default {
     width: 100%;
     height: 46px;
     padding: 10px 20px 10px 20px;
-    background: linear-gradient(to bottom, #C7C7C7, #9A9A9A);
+    background-color: #DCC97B;
     text-align: center;
 }
 
@@ -101,7 +97,7 @@ export default {
 .header-title {
     width: 50%;
     align-self: center;
-    color: white;
+    color: black;
 }
 
 .title {
@@ -116,7 +112,7 @@ export default {
 .menu{
     margin-right: 20px;
     float: right;
-    color: white;
+    color: black;
 }
 
 .header-icon{

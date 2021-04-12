@@ -1,10 +1,10 @@
 <template>
     <div class="areaDiv home" id="home">
         <div class="home-text">
-            <span class="bold">HELLO, I'm</span>
+            <span class="light">HELLO, I'm</span>
         </div>
         <div class="home-title">
-            <p class="bold">- WEB DEVELOPER -</p>
+            <p class="light">- WEB DEVELOPER -</p>
         </div>
     </div>
 </template>
@@ -21,12 +21,12 @@
 .home-text{
     margin-top: 100px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .home-title{
-    font-size: 40px;
-    background: linear-gradient(to bottom, #FDC488, #FFE0BF);
+    font-size: 60px;
+    background: linear-gradient(to bottom, #DCC97B, #FFE0BF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -40,6 +40,13 @@
     background-size: cover;
     text-align: center;
     }
+
+    .home-text{
+    margin-top: 36px;
+    font-style: italic;
+    font-size: 30px;
+}
+
 }
 
 </style>
