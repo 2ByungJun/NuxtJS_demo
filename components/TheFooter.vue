@@ -67,13 +67,15 @@ export default {
 
 svg{
     margin-left: 5px;
+    margin-top: 9px;
 }
 
 .footer {
     position: fixed;
-    height: 5%;
-    left: 0;
+    height: auto;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background-color: #253629;
     color: white;
