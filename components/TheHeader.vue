@@ -1,6 +1,6 @@
 <template>
     <div class="card header">
-        <div class="row">
+        <div class="row header-div">
             <div class="header-title text-left">
                 <h2 class="title">BBANG-JUN</h2>
             </div>
@@ -11,23 +11,75 @@
                 <a class="menu" href="#"><h3>HOME</h3></a>
             </div>
             <div class="header-icon">
-                <b-icon icon="justify" font-scale="2"></b-icon>
+                <b-icon 
+                    icon="justify" 
+                    class="cursor-pointer"
+                    font-scale="2" 
+                    :style="iconStyle"
+                    @click="onClickIcon"
+                    @mouseover="overIcon" 
+                    @mouseleave="leaveIcon"
+                    v-b-toggle.sidebar-no-header
+                    >
+                </b-icon>
             </div>
+
+            <b-sidebar 
+                bg-variant="dark"
+                text-variant="light"
+                id="sidebar-no-header"
+                aria-labelledby="sidebar-no-header-title"
+                right 
+                no-header
+                shadow>
+            <template #default="{ hide }">
+                <div class="p-3">
+                    <nav class="mb-3">
+                        <b-nav vertical>
+                            <b-nav-item href="#home" >Home</b-nav-item>
+                            <b-nav-item href="#about" >ABOUT</b-nav-item>
+                            <b-nav-item href="#skill" >SKILL</b-nav-item>
+                            <b-nav-item href="#project" >PROJECT</b-nav-item>
+                        </b-nav>
+                    </nav>
+                    <b-button variant="outline-light" block @click="hide">Close</b-button>
+                </div>
+            </template>
+            </b-sidebar>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    computed:{
-        smAt(){
-            return this.$store.state.smAt
+    data(){
+        return {
+            iconStyle: {color: 'white'},
         }
     },
+    methods: {
+        overIcon(){
+            this.iconStyle = {color: '#F3F481'}
+        },
+        leaveIcon(){
+            this.iconStyle = {color: 'white'}
+        },
+        onClickIcon(){
+            this.$store.commit('updateDrawer')
+        }
+    }
 }
 </script>
 
 <style scoped>
+.card{
+    border: 0px
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
 .header {
     position: fixed;
     left: 0;
@@ -38,25 +90,27 @@ export default {
     width: 100%;
     height: 46px;
     padding: 10px 20px 10px 20px;
-    background-color: #253629;
-    color: white;
+    background: linear-gradient(to bottom, #C7C7C7, #9A9A9A);
     text-align: center;
+}
+
+.header-div {
+    padding: 5px;
 }
 
 .header-title {
     width: 50%;
     align-self: center;
+    color: white;
 }
 
 .title {
     float: left;
-    color: white;
 }
 
 .header-menu {
     width: 50%;
     align-self: center;
-    color: white;
 }
 
 .menu{
@@ -77,8 +131,13 @@ export default {
     .header-icon{
         display: block;
         width: 50%;
+        margin-bottom: 5px;
         align-self: center;
         text-align: right;
+    }
+
+    .nav-link{
+        color: white;
     }
 }
 </style>

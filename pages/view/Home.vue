@@ -1,5 +1,5 @@
 <template>
-    <div class="areaDiv home">
+    <div class="areaDiv home" id="home">
         <div class="home-text">
             <span class="bold">HELLO, I'm</span>
         </div>

@@ -1,9 +1,9 @@
 export const state = () => ({ 
-    smAt: false
+    drawer: null
 }); 
 
 export const mutations = { 
-    updateSmAt (state, payload) { 
-        state.smAt = payload
+    updateDrawer (state) { 
+        state.drawer = !state.drawer
     } 
 }
