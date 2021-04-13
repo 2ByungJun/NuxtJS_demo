@@ -19,7 +19,7 @@ export default {
     About,
     Skill,
     Project
-  }
+  },
 }
 </script>
 
@@ -28,6 +28,7 @@ export default {
 
 html, body {
   font-family: 'Zilla Slab', serif;
+  background-color: #ECECE9;
 }
 
 .light {
@@ -44,13 +45,49 @@ html, body {
   padding-top: 2.5rem;
 }
 
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.h1{
+    border-bottom: 5px solid #444;
+    margin-top: 15px;
 }
 
+/** 애니메이션 효과 */
+.fade-in-box {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    
 </style>

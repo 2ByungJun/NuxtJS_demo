@@ -1,5 +1,5 @@
 <template>
-    <div class="areaDiv about" id="about">
+    <div class="areaDiv container" id="about">
         <h1 class="h1">About</h1>
         <div class="row">
             <b-img thumbnail fluid src="../../assets/img/lbj.jpg" alt="lbj" class="img"></b-img>
@@ -24,8 +24,7 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;900&display=swap');
 
-.about{
-    background-color: #ECECE9;
+#about{
     padding: 100px;
 }
 
@@ -33,11 +32,6 @@
     margin-top: 20px;
     margin-left: 10px;
     font-size: 20px;
-}
-
-.h1{
-    border-bottom: 5px solid #444;
-    margin-top: 15px;
 }
 
 .font-ssans{

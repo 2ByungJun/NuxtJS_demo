@@ -1,4 +1,12 @@
 <template>
-    <div class="areaDiv" id="skill" style="background-color: #8BA989;">
+    <div class="areaDiv container" id="skill">
+        <h1 class="h1">Skill</h1>
     </div>
 </template>
+
+<style scoped>
+#skill{
+    padding: 100px;
+}
+
+</style>
